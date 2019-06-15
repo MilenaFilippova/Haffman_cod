@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <list>
+#include <vector>
+#include "node.h"
+#include "sort.h"
+#include "coder.h"
+#include "decoder.h"
+
+
+using namespace std;
+
+int main(void)
+{
+	setlocale(LC_ALL,"Russian");
+
+	mycoder("name.txt","outfile.txt");  //архивировать
+	mydecoder("outfile.txt", "name.txt"); //разархивировать
+
+	system("pause");
+	return 0;
+}
